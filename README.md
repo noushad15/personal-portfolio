@@ -1,14 +1,4 @@
-# 🌟 Noushad Hossain - Portfolio Website
 
-> **Lead Software Engineer & AI Innovator** - Modern portfolio website showcasing expertise in AI, data engineering, and scalable backend systems.
-
-[![Next.js](https://img.shields.io/badge/Next.js-14.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18.2-61dafb?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-38b2ac?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Three.js](https://img.shields.io/badge/Three.js-0.159-000000?style=for-the-badge&logo=three.js)](https://threejs.org/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.16-ff69b4?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
-
-## 🚀 Live Demo
 
 🌐 **[View Live Website](https://noushadhossain.com)**
 
@@ -16,13 +6,6 @@
 
 This is a modern, responsive portfolio website built for **Noushad Hossain**, a Lead Software Engineer specializing in AI-driven analytics platforms, data engineering, and scalable backend systems. The portfolio showcases professional experience, technical skills, and GitHub projects with dynamic content fetching.
 
-### 👨‍💻 About Noushad
-
-- **🏢 Current Role:** Lead Engineer at Cogwheel Analytics
-- **🎯 Specialization:** AI & Data Automation, Backend Development, ETL Pipelines
-- **🌍 Location:** Dhaka, Bangladesh (Open to relocation in Germany)
-- **🎓 Background:** 4+ Years in Backend, APIs, and Cloud Solutions
-- **📚 Research:** IEEE-Published Researcher in Robotics & Data Communication
 
 ## ✨ Features
 
