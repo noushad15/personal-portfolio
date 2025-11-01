@@ -75,14 +75,16 @@ export default function HeroSection() {
             >
               <TypeAnimation
                 sequence={[
-                  'Full-Stack Developer',
-                  2000,
-                  'AI Enthusiast',
-                  2000,
-                  'Community Manager',
-                  2000,
-                  'Tech Enthusiast',
-                  2000,
+                  'Building Intelligent Systems',
+                2000,
+                'Empowering Data with AI',
+                2000,
+                'Creating Human-Centered AI Solutions',
+                2000,
+                'Designing Scalable Architectures',
+                2000,
+                'Leading Innovative Tech Teams',
+                2000,
                 ]}
                 wrapper="span"
                 speed={50}
