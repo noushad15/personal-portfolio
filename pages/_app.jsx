@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 import { siteConfig } from '../lib/config';
 import ThemeSwitcher from '../components/ThemeSwitcher';
 import NewHeader from '../components/NewHeader';
-
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
