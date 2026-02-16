@@ -8,6 +8,7 @@ import ThemeSwitcher from '../components/ThemeSwitcher';
 import NewHeader from '../components/NewHeader';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
   return (
     <>
       <Head>
