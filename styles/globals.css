@@ -234,3 +234,4 @@ strong { font-weight: 700; }
 .btn:disabled { opacity: .6; cursor: default; }
 .form-done { max-width: 640px; margin-bottom: 72px; }
 .form-done h3 { margin-bottom: 6px; }
+.rec-empty { max-width: 640px; } .rec-empty p { margin: 0; color: var(--ink-2); }

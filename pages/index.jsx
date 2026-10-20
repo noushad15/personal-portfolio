@@ -151,13 +151,13 @@ export default function Home({ posts, recommendations }) {
         </div>
       </section>
 
-      {recommendations.length > 0 && (
-        <section className="section" id="recommendations">
-          <div className="wrap">
-            <div className="section-head">
-              <h2>What colleagues say</h2>
-              <p>Written by people I have worked with, published here with their name and a link to their profile. <Link href="/recommend" className="more-link">Write one</Link></p>
-            </div>
+      <section className="section" id="recommendations">
+        <div className="wrap">
+          <div className="section-head">
+            <h2>What colleagues say</h2>
+            <p>Recommendations from people I have worked with, published with their name and a link to their profile after I have read them.</p>
+          </div>
+          {recommendations.length > 0 ? (
             <div className="recs">
               {recommendations.map((r) => (
                 <figure className="rec" key={r.slug}>
@@ -170,9 +170,17 @@ export default function Home({ posts, recommendations }) {
                 </figure>
               ))}
             </div>
+          ) : (
+            <div className="box rec-empty">
+              <p>This section is new and still empty. If we have worked together, I would value a few honest sentences about what it was like.</p>
+            </div>
+          )}
+          <div className="hero-actions" style={{ marginTop: 22 }}>
+            <Link className="btn secondary" href="/recommend">Write a recommendation {Icon.arrow}</Link>
+            <a className="btn secondary" href={site.linkedin} target="_blank" rel="noopener">Recommendations on LinkedIn {Icon.arrow}</a>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       <section className="section" id="writing">
         <div className="wrap">
