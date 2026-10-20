@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Noushad Hossain — Writing</title>
+    <link>https://noushadhossain.com/writing</link>
+    <atom:link href="https://noushadhossain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Engineering notes on PostgreSQL, data pipelines, LLM agents, email infrastructure and running small platforms in production.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Oct 2026 21:56:43 GMT</lastBuildDate>
+    <item>
+      <title>Idempotent batch APIs with an external_id</title>
+      <link>https://noushadhossain.com/writing/idempotent-batch-apis-with-external-id</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/idempotent-batch-apis-with-external-id</guid>
+      <pubDate>Mon, 19 Oct 2026 09:00:00 GMT</pubDate>
+      <description>Designing a certification platform's provider API so retried batches never duplicate certificates and partners can integrate without talking to us.</description>
+    </item>
+    <item>
+      <title>A channel taxonomy in one CSV</title>
+      <link>https://noushadhossain.com/writing/a-channel-taxonomy-in-one-csv</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/a-channel-taxonomy-in-one-csv</guid>
+      <pubDate>Tue, 13 Oct 2026 09:00:00 GMT</pubDate>
+      <description>The most useful thing to come out of a dbt spike was fifteen lines of CSV: one place where every vendor's channel name maps to ours.</description>
+    </item>
+    <item>
+      <title>A week with dbt Core and its sharp defaults</title>
+      <link>https://noushadhossain.com/writing/a-week-with-dbt-and-its-sharp-defaults</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/a-week-with-dbt-and-its-sharp-defaults</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 GMT</pubDate>
+      <description>A time-boxed spike to decide whether dbt fits our silver-to-gold layer: it did everything asked, and showed how easily it produces silently wrong data.</description>
+    </item>
+    <item>
+      <title>Test your row-level security as a non-superuser</title>
+      <link>https://noushadhossain.com/writing/testing-row-level-security-as-a-non-superuser</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/testing-row-level-security-as-a-non-superuser</guid>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 GMT</pubDate>
+      <description>RLS tests that run as the postgres superuser prove nothing. How the Intelect test suite exercises the policies for real, and what that costs.</description>
+    </item>
+    <item>
+      <title>Two layers of tenant isolation: ORM hooks and Postgres row-level security</title>
+      <link>https://noushadhossain.com/writing/two-layers-of-tenant-isolation</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/two-layers-of-tenant-isolation</guid>
+      <pubDate>Tue, 22 Sep 2026 09:00:00 GMT</pubDate>
+      <description>How a multi-tenant CRM on one shared PostgreSQL database keeps tenants apart twice: once in SQLAlchemy, once in the database itself.</description>
+    </item>
+    <item>
+      <title>Migrating a WordPress site to Postgres without running MySQL</title>
+      <link>https://noushadhossain.com/writing/migrating-wordpress-to-postgres-without-mysql</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/migrating-wordpress-to-postgres-without-mysql</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 GMT</pubDate>
+      <description>Two education platforms moved from WordPress to FastAPI and Postgres 16. The migration pipeline is reproducible, keeps a safety net, and lets old passwords keep working.</description>
+    </item>
+    <item>
+      <title>Secrets hygiene for a small platform</title>
+      <link>https://noushadhossain.com/writing/secrets-hygiene-for-a-small-platform</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/secrets-hygiene-for-a-small-platform</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 GMT</pubDate>
+      <description>The written rules InkPigeon follows for passwords, API keys, DKIM keys, logging, configuration and migrations, and why they are rules rather than habits.</description>
+    </item>
+    <item>
+      <title>Where port 25 works: hosting an email platform in 2026</title>
+      <link>https://noushadhossain.com/writing/where-port-25-works</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/where-port-25-works</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 GMT</pubDate>
+      <description>Most cloud providers will not let you send mail on port 25. How that constraint shaped where and how InkPigeon runs.</description>
+    </item>
+    <item>
+      <title>Two privilege escalations I shipped, and the rules that came out of it</title>
+      <link>https://noushadhossain.com/writing/two-privilege-escalations-i-shipped</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/two-privilege-escalations-i-shipped</guid>
+      <pubDate>Tue, 25 Aug 2026 09:00:00 GMT</pubDate>
+      <description>InkPigeon's custom-roles feature passed its tests and still had two ways to escalate privileges. What a dedicated adversarial pass found, and the rules it produced.</description>
+    </item>
+    <item>
+      <title>The mail queue lives in PostgreSQL</title>
+      <link>https://noushadhossain.com/writing/the-mail-queue-lives-in-postgres</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/the-mail-queue-lives-in-postgres</guid>
+      <pubDate>Tue, 18 Aug 2026 09:00:00 GMT</pubDate>
+      <description>InkPigeon's delivery workers claim messages with FOR UPDATE SKIP LOCKED instead of a Redis or Celery queue. The reasoning and the trade-off.</description>
+    </item>
+    <item>
+      <title>A modular monolith on one VPS</title>
+      <link>https://noushadhossain.com/writing/a-modular-monolith-on-one-vps</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/a-modular-monolith-on-one-vps</guid>
+      <pubDate>Tue, 11 Aug 2026 09:00:00 GMT</pubDate>
+      <description>InkPigeon is one Python codebase deployed as about eight containers that scale independently. Why that beats microservices on a single server.</description>
+    </item>
+    <item>
+      <title>Build or adopt: why InkPigeon doesn't run on Mailu or Postal</title>
+      <link>https://noushadhossain.com/writing/build-or-adopt-an-email-platform</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/build-or-adopt-an-email-platform</guid>
+      <pubDate>Tue, 04 Aug 2026 09:00:00 GMT</pubDate>
+      <description>I evaluated five open-source mail products before building InkPigeon's own pipeline. Here is what each one is, and why only two components survived.</description>
+    </item>
+    <item>
+      <title>AI coding sessions need a standards file</title>
+      <link>https://noushadhossain.com/writing/ai-coding-sessions-need-a-standards-file</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/ai-coding-sessions-need-a-standards-file</guid>
+      <pubDate>Tue, 14 Jul 2026 09:00:00 GMT</pubDate>
+      <description>I use AI coding assistants heavily. The thing that keeps them from drifting is not a better prompt but a written standards file that outranks the model.</description>
+    </item>
+    <item>
+      <title>The cutover playbook: swap a base URL, add a pipe, prove it on auth first</title>
+      <link>https://noushadhossain.com/writing/the-cutover-playbook</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/the-cutover-playbook</guid>
+      <pubDate>Tue, 23 Jun 2026 09:00:00 GMT</pubDate>
+      <description>How we move frontend modules from legacy endpoints to a new backend one constructor at a time, and why the first cutover is the one that matters.</description>
+    </item>
+    <item>
+      <title>Deleting endpoints safely: a code audit is not enough</title>
+      <link>https://noushadhossain.com/writing/deleting-endpoints-safely-code-audit-vs-access-logs</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/deleting-endpoints-safely-code-audit-vs-access-logs</guid>
+      <pubDate>Tue, 09 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Seven groups of old API endpoints have zero callers in our code. We still are not deleting them until the access logs agree.</description>
+    </item>
+    <item>
+      <title>Replacing a five-year rewrite with a bounded migration</title>
+      <link>https://noushadhossain.com/writing/replacing-a-five-year-rewrite-with-a-bounded-migration</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/replacing-a-five-year-rewrite-with-a-bounded-migration</guid>
+      <pubDate>Tue, 26 May 2026 09:00:00 GMT</pubDate>
+      <description>Our plan to migrate all 18 modules to a new architecture would have taken 3.5 to 6 years. Here is how we replaced it with a target the company could actually reach.</description>
+    </item>
+    <item>
+      <title>Who owns which layer: Python, dbt and Celery</title>
+      <link>https://noushadhossain.com/writing/who-owns-which-layer-python-dbt-celery</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/who-owns-which-layer-python-dbt-celery</guid>
+      <pubDate>Tue, 05 May 2026 09:00:00 GMT</pubDate>
+      <description>Before choosing a transform tool for our ETL v2 platform, we fixed which layer each component owns. The boundaries outlived the tool decision.</description>
+    </item>
+    <item>
+      <title>Idempotent ingestion: run IDs, file hashes and row hashes</title>
+      <link>https://noushadhossain.com/writing/idempotent-ingestion-run-ids-and-hashes</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/idempotent-ingestion-run-ids-and-hashes</guid>
+      <pubDate>Tue, 21 Apr 2026 09:00:00 GMT</pubDate>
+      <description>How the bronze layer of our ETL v2 design makes every load safe to re-run, and why a data contract has to exist before the first table does.</description>
+    </item>
+    <item>
+      <title>A security gate that doesn't block delivery</title>
+      <link>https://noushadhossain.com/writing/a-security-gate-that-does-not-block-delivery</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/a-security-gate-that-does-not-block-delivery</guid>
+      <pubDate>Tue, 07 Apr 2026 09:00:00 GMT</pubDate>
+      <description>How I built our GitHub Actions staging pipeline to fail on security findings by default while letting a reviewer approve a deployment with a record.</description>
+    </item>
+    <item>
+      <title>One hotel, five identifiers: reconciling identities across vendor APIs</title>
+      <link>https://noushadhossain.com/writing/reconciling-hotel-identities-across-vendor-apis</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/reconciling-hotel-identities-across-vendor-apis</guid>
+      <pubDate>Tue, 24 Mar 2026 09:00:00 GMT</pubDate>
+      <description>Why the hardest problem in a multi-source analytics platform is agreeing on which hotel a row belongs to, and how we made that explicit.</description>
+    </item>
+    <item>
+      <title>Grounding LLM reports in your own APIs</title>
+      <link>https://noushadhossain.com/writing/grounding-llm-reports-in-your-own-apis</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/grounding-llm-reports-in-your-own-apis</guid>
+      <pubDate>Tue, 10 Mar 2026 09:00:00 GMT</pubDate>
+      <description>How we added LLM-written narrative reports to an analytics platform without letting the model invent a single number.</description>
+    </item>
+    <item>
+      <title>What a coding agent costs per pull request</title>
+      <link>https://noushadhossain.com/writing/what-a-coding-agent-costs-per-pull-request</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/what-a-coding-agent-costs-per-pull-request</guid>
+      <pubDate>Wed, 25 Feb 2026 09:00:00 GMT</pubDate>
+      <description>Why I built a per-run cost ledger into my coding agent, and how knowing the price of a pull request changed which tickets I give it.</description>
+    </item>
+    <item>
+      <title>Four tools are enough: designing a bounded coding-agent loop</title>
+      <link>https://noushadhossain.com/writing/four-tools-are-enough</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/four-tools-are-enough</guid>
+      <pubDate>Wed, 11 Feb 2026 09:00:00 GMT</pubDate>
+      <description>How I built an agent that turns well-specified tickets into pull requests with four tools, hard limits and a provider abstraction.</description>
+    </item>
+    <item>
+      <title>Missing data should be a state, not a silence</title>
+      <link>https://noushadhossain.com/writing/missing-data-should-be-a-state</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/missing-data-should-be-a-state</guid>
+      <pubDate>Wed, 28 Jan 2026 09:00:00 GMT</pubDate>
+      <description>How the analytics platform I lead turned silent gaps in vendor data into tracked states with monitors, triggers and automatic resolution.</description>
+    </item>
+    <item>
+      <title>Running periodic vendor syncs with Celery beat and a database scheduler</title>
+      <link>https://noushadhossain.com/writing/celery-beat-with-a-database-scheduler</link>
+      <guid isPermaLink="true">https://noushadhossain.com/writing/celery-beat-with-a-database-scheduler</guid>
+      <pubDate>Wed, 14 Jan 2026 09:00:00 GMT</pubDate>
+      <description>Why the analytics platform I lead keeps its sync schedules in PostgreSQL rather than in code, and what went wrong before it did.</description>
+    </item>
+  </channel>
+</rss>

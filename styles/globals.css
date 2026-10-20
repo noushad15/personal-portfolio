@@ -180,3 +180,33 @@ strong { font-weight: 700; }
 @media (max-width: 860px) { .study-body { grid-template-columns: 1fr; } .aside { position: static; } }
 .back { color: var(--muted); font-size: 15px; }
 .back:hover { color: var(--accent-ink); }
+
+/* ---------- writing ---------- */
+.post-year { margin-bottom: 40px; }
+.post-year h2 { font-size: 18px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 18px 0; border-top: 1px solid var(--line); }
+.post-list li:last-child { border-bottom: 1px solid var(--line); }
+.post-list time { color: var(--muted); font-size: 14.5px; padding-top: 3px; }
+.post-list h3 { font-size: 19px; margin-bottom: 4px; letter-spacing: -0.01em; }
+.post-list h3 a:hover { color: var(--accent-ink); }
+.post-list p { color: var(--ink-2); font-size: 15.5px; margin: 0 0 4px; max-width: 70ch; }
+.post-meta { color: var(--muted); font-size: 14px; }
+.post-list.compact li { padding: 14px 0; }
+@media (max-width: 700px) { .post-list li { grid-template-columns: 1fr; gap: 4px; } }
+.post .study-head h1 { max-width: 24ch; }
+.post-body { max-width: 720px; font-size: 17.5px; line-height: 1.65; }
+.post-body h2 { font-size: 24px; margin: 40px 0 12px; }
+.post-body h3 { font-size: 19px; margin: 28px 0 8px; }
+.post-body p, .post-body li { color: var(--ink-2); }
+.post-body p { max-width: none; margin-bottom: 1.1em; }
+.post-body a { color: var(--accent-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.post-body pre { background: var(--paper-2); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; font-size: 14px; line-height: 1.5; }
+.post-body pre code { background: none; padding: 0; font-size: inherit; }
+.post-body blockquote { margin: 1.2em 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--accent); color: var(--ink-2); }
+.post-body table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 1em 0 1.4em; }
+.post-body th, .post-body td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.post-body th { color: var(--muted); font-weight: 600; }
+.post-body hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+.post-foot { max-width: 720px; margin-top: 44px; padding: 18px 22px; background: var(--paper-2); border: 1px solid var(--line); border-radius: 12px; font-size: 15.5px; }
+.post-foot p { margin: 0; color: var(--ink-2); } .post-foot a { color: var(--accent-ink); font-weight: 600; }

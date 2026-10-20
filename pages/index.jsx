@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Layout, { Icon } from "../components/Layout";
+import { getAllPosts } from "../lib/posts";
+import { formatDate } from "../lib/format";
 import { diagrams } from "../components/Diagrams";
 import {
   site, hero, work, otherWork, experience, education, capabilities, principles,
@@ -26,7 +28,12 @@ function CaseCard({ c }) {
   );
 }
 
-export default function Home() {
+export async function getStaticProps() {
+  const posts = getAllPosts().slice(0, 4).map(({ content, html, ...p }) => p);
+  return { props: { posts } };
+}
+
+export default function Home({ posts }) {
   return (
     <Layout>
       <section className="hero">
@@ -139,6 +146,26 @@ export default function Home() {
               {languages.map((l) => <div key={l.name}><b>{l.name}</b><span>{l.level}</span></div>)}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section" id="writing">
+        <div className="wrap">
+          <div className="section-head">
+            <h2>Writing</h2>
+            <p>Notes from the work: decisions, trade-offs and what I'd do differently. <Link href="/writing" className="more-link">All posts</Link></p>
+          </div>
+          <ul className="post-list compact">
+            {posts.map((p) => (
+              <li key={p.slug}>
+                <time dateTime={p.date}>{formatDate(p.date)}</time>
+                <div>
+                  <h3><Link href={`/writing/${p.slug}`}>{p.title}</Link></h3>
+                  <p>{p.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

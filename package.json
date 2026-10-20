@@ -5,12 +5,16 @@
   "description": "Personal site of Noushad Hossain, Lead Software Engineer (backend, data and AI platforms).",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-seo.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seo": "node scripts/generate-seo.js"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "^5.3.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.1.1",
     "next": "^14.2.35",
     "react": "18.3.1",
     "react-dom": "18.3.1"
