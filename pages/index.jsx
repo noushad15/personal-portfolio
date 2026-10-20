@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout, { Icon } from "../components/Layout";
 import { getAllPosts } from "../lib/posts";
+import { getRecommendations } from "../lib/recommendations";
 import { formatDate } from "../lib/format";
 import { diagrams } from "../components/Diagrams";
 import {
@@ -30,10 +31,11 @@ function CaseCard({ c }) {
 
 export async function getStaticProps() {
   const posts = getAllPosts().slice(0, 4).map(({ content, html, ...p }) => p);
-  return { props: { posts } };
+  const recommendations = getRecommendations();
+  return { props: { posts, recommendations } };
 }
 
-export default function Home({ posts }) {
+export default function Home({ posts, recommendations }) {
   return (
     <Layout>
       <section className="hero">
@@ -149,6 +151,29 @@ export default function Home({ posts }) {
         </div>
       </section>
 
+      {recommendations.length > 0 && (
+        <section className="section" id="recommendations">
+          <div className="wrap">
+            <div className="section-head">
+              <h2>What colleagues say</h2>
+              <p>Written by people I have worked with, published here with their name and a link to their profile. <Link href="/recommend" className="more-link">Write one</Link></p>
+            </div>
+            <div className="recs">
+              {recommendations.map((r) => (
+                <figure className="rec" key={r.slug}>
+                  <blockquote>{r.quote}</blockquote>
+                  <figcaption>
+                    <b>{r.linkedin ? <a href={r.linkedin} target="_blank" rel="noopener">{r.name}</a> : r.name}</b>
+                    <span>{r.role}{r.company ? `, ${r.company}` : ""}</span>
+                    <span>{r.relation}</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="section" id="writing">
         <div className="wrap">
           <div className="section-head">
@@ -174,6 +199,7 @@ export default function Home({ posts }) {
           <div>
             <h2 style={{ marginBottom: 14 }}>Let's talk</h2>
             <p>I'm looking for a full-time role in Germany or elsewhere in the EU, on-site, hybrid or remote, starting immediately. If you're hiring for one of these, the fastest way to reach me is email.</p>
+            <p style={{ fontSize: 15, color: "var(--muted)" }}>Worked with me? <Link href="/recommend" className="more-link">Write a recommendation</Link>.</p>
             <div className="roles" style={{ marginBottom: 22 }}>
               {targetRoles.map((r) => <span className="chip" key={r}>{r}</span>)}
             </div>

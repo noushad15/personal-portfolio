@@ -210,3 +210,27 @@ strong { font-weight: 700; }
 .post-body hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
 .post-foot { max-width: 720px; margin-top: 44px; padding: 18px 22px; background: var(--paper-2); border: 1px solid var(--line); border-radius: 12px; font-size: 15.5px; }
 .post-foot p { margin: 0; color: var(--ink-2); } .post-foot a { color: var(--accent-ink); font-weight: 600; }
+
+/* ---------- recommendations ---------- */
+.recs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+.rec { margin: 0; background: var(--paper-2); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; }
+.rec blockquote { margin: 0; font-size: 16.5px; line-height: 1.55; color: var(--ink); white-space: pre-line; }
+.rec blockquote::before { content: "\201C"; color: var(--accent); font-size: 34px; line-height: 0; vertical-align: -0.35em; margin-right: 4px; }
+.rec figcaption { display: grid; gap: 2px; font-size: 14.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+.rec figcaption b { color: var(--ink); font-size: 15.5px; }
+.rec figcaption a { color: var(--accent-ink); }
+
+/* ---------- forms ---------- */
+.rec-form { max-width: 760px; display: grid; gap: 16px; padding-bottom: 72px; }
+.rec-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .rec-form .row2 { grid-template-columns: 1fr; } }
+.rec-form label { display: grid; gap: 6px; font-size: 14.5px; font-weight: 600; color: var(--ink-2); }
+.rec-form input, .rec-form textarea { font: inherit; font-weight: 400; color: var(--ink); background: var(--paper-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; width: 100%; }
+.rec-form input:focus, .rec-form textarea:focus { outline: 2px solid var(--focus); outline-offset: 1px; border-color: var(--accent); }
+.rec-form textarea { resize: vertical; min-height: 160px; line-height: 1.5; }
+.rec-form .hint { font-weight: 400; color: var(--muted); font-size: 13.5px; }
+.rec-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-error { color: #a33a2a; font-size: 15px; margin: 0; }
+.btn:disabled { opacity: .6; cursor: default; }
+.form-done { max-width: 640px; margin-bottom: 72px; }
+.form-done h3 { margin-bottom: 6px; }
